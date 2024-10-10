@@ -1,8 +1,7 @@
 streamlit==1.39.0  # Use a stable version of Streamlit
-numpy==1.21.0      # Ensure compatibility
-Cython==0.29.24     # Version that works well with SpaCy
-spacy==3.0.6       # Ensure this is a compatible version
-thinc==8.0.3       # Version compatible with the chosen SpaCy version
+numpy    # Version that works well with SpaCy
+spacy       # Ensure this is a compatible version
+thinc     # Version compatible with the chosen SpaCy version
 gTTS
 beautifulsoup4
 deep-translator
