@@ -11,10 +11,10 @@ httpx
 httpx-oauth
 huggingface-hub
 moviepy
-numpy
-Cython
-spacy
-thinc
+numpy==1.21.0
+Cython==0.29.24
+spacy==3.0.6
+thinc==8.0.3
 ollama
 pandas
 PyPDF2
