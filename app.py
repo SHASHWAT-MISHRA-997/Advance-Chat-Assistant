@@ -23,13 +23,15 @@ import base64
 # ---------------------------
 # Function Definitions
 # ---------------------------
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"  # This disables GPU access
 
 # Load SpaCy English model
 try:
     nlp = spacy.load("en_core_web_sm")
-except:
-    st.error("SpaCy model 'en_core_web_sm' not found. Please run 'python -m spacy download en_core_web_sm' in your terminal.")
-    st.stop()
+except OSError:
+    from spacy.cli import download
+    download("en_core_web_sm")
+    nlp = spacy.load("en_core_web_sm")
 
 # Initialize sentiment and emotion analysis pipeline
 sentiment_pipeline = pipeline("sentiment-analysis")
