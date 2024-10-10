@@ -23,6 +23,7 @@ requests
 SpeechRecognition
 spacy
 thinc
+spacy[cpu]
 
 tokenizers
 torch
