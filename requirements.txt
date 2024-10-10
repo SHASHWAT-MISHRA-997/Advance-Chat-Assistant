@@ -1,4 +1,4 @@
-streamlit
+streamlit==1.39.0  # Specify the version you want
 beautifulsoup4
 deep-translator
 gTTS
@@ -11,7 +11,7 @@ httpx
 httpx-oauth
 huggingface-hub
 moviepy
-numpy==1.21.0
+numpy==1.21.0  # Pin Numpy to a compatible version
 Cython==0.29.24
 spacy==3.0.6
 thinc==8.0.3
