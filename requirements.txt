@@ -21,8 +21,8 @@ python-pptx
 pyttsx3
 requests
 SpeechRecognition
-spacy==3.2.1
-thinc==8.0.12
+spacy
+thinc
 
 tokenizers
 torch
