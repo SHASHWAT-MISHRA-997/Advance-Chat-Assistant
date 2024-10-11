@@ -1,16 +1,16 @@
-streamlit==1.39.0
+streamlit
 
-ollama==0.3.3
-pandas==2.2.2
-PyAudio==0.2.14
-PyPDF2==3.0.1
-python-docx==1.1.2
-python-pptx==1.0.2
-pyttsx3==2.91
-requests==2.31.0
-SpeechRecognition==3.10.4
-tokenizers==0.19.1
-torch==2.4.1
+ollama
+pandas
+PyAudio
+PyPDF2
+python-docx
+python-pptx
+pyttsx3
+requests
+SpeechRecognition
+tokenizers
+torch
 
-transformers==4.44.2
-pip==24.2
+transformers
+pip
