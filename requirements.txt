@@ -1,5 +1,6 @@
 streamlit
 beautifulsoup4
+en-core-web-sm==3.8.0
 deep-translator
 gTTS
 moviepy
