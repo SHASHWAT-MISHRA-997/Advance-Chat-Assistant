@@ -22,10 +22,6 @@ import subprocess
 import torch
 
 
-# ---------------------------
-# Function Definitions
-# ---------------------------
-
 # Function to load SpaCy model, download it if it's missing
 def load_spacy_model():
     try:
@@ -37,7 +33,7 @@ def load_spacy_model():
     return nlp
 
 # Function to load sentiment analysis pipeline, with dynamic framework detection
-def load_pipeline():
+def load_sentiment_pipeline():
     try:
         if torch.cuda.is_available():
             framework = "pt"
@@ -46,7 +42,7 @@ def load_pipeline():
         else:
             raise RuntimeError("Neither PyTorch nor TensorFlow is available.")
         
-        # Load the sentiment analysis pipeline, defaulting to PyTorch if available
+        # Load the sentiment analysis pipeline
         sentiment_pipeline = pipeline("sentiment-analysis", framework=framework)
         return sentiment_pipeline
 
@@ -54,7 +50,27 @@ def load_pipeline():
         st.error(f"Error loading sentiment analysis pipeline: {e}")
         raise
 
-emotion_pipeline = pipeline("text-classification", model="j-hartmann/emotion-english-distilroberta-base", return_all_scores=True)
+# Function to load emotion analysis pipeline, force framework to use PyTorch or TensorFlow
+def load_emotion_pipeline():
+    try:
+        if torch.cuda.is_available() or torch.has_mps:
+            framework = "pt"
+        else:
+            framework = "tf"
+        
+        # Load emotion analysis pipeline using the j-hartmann model
+        emotion_pipeline = pipeline(
+            "text-classification", 
+            model="j-hartmann/emotion-english-distilroberta-base", 
+            return_all_scores=True, 
+            framework=framework
+        )
+        return emotion_pipeline
+    except Exception as e:
+        st.error(f"Error loading emotion analysis pipeline: {e}")
+        raise
+
+
 
 # Initialize speech recognition and text-to-speech
 recognizer = sr.Recognizer()
@@ -299,12 +315,13 @@ if 'user_input' not in st.session_state:
 # Configure the Streamlit page
 st.set_page_config(page_title="🤖 SM Business Chatbot", page_icon="💬", layout="wide")
 
-# Load the SpaCy model and sentiment analysis pipeline
+# Load the SpaCy model, sentiment analysis pipeline, and emotion analysis pipeline
 st.write("Loading models...")
 
 try:
     nlp = load_spacy_model()
-    sentiment_pipeline = load_pipeline()
+    sentiment_pipeline = load_sentiment_pipeline()
+    emotion_pipeline = load_emotion_pipeline()
     st.success("Models loaded successfully!")
 except Exception as e:
     st.error(f"Failed to load models: {e}")
@@ -330,8 +347,19 @@ if st.button("Analyze"):
             st.write("Sentiment Analysis:", sentiment_result)
         except Exception as e:
             st.error(f"Sentiment analysis failed: {e}")
+        
+        # Perform emotion analysis using Transformers pipeline
+        try:
+            emotion_result = emotion_pipeline(user_input)
+            st.write("Emotion Analysis:", emotion_result)
+        except Exception as e:
+            st.error(f"Emotion analysis failed: {e}")
     else:
         st.warning("Please enter some text for analysis.")
+
+
+
+    
 
 # Initialize session state for chat history and user activity
 if 'history' not in st.session_state:
