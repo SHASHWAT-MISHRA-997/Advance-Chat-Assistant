@@ -11,8 +11,8 @@ python-pptx==1.0.2
 pyttsx3==2.98
 requests==2.32.3
 spacy==3.8.2
-thinc-8.3.2
-numpy-2.0.2
-blis-1.0.1
+thinc==8.3.2
+numpy==2.0.2
+blis==1.0.1
 transformers==4.45.2
-tokenizers-0.20.1
+tokenizers==0.20.1
