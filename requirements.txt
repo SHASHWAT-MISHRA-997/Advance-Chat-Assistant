@@ -16,3 +16,4 @@ numpy==2.0.2
 blis==1.0.1
 transformers==4.45.2
 tokenizers==0.20.1
+SpeechRecognition==3.10.4
