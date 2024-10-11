@@ -18,19 +18,21 @@ import pyttsx3
 import threading
 from transformers import pipeline
 import base64
-
+import subprocess
 
 
 # ---------------------------
 # Function Definitions
 # ---------------------------
 
-# Load SpaCy English model
+# Try to load the model
 try:
     nlp = spacy.load("en_core_web_sm")
-except:
-    st.error("SpaCy model 'en_core_web_sm' not found. Please run 'python -m spacy download en_core_web_sm' in your terminal.")
-    st.stop()
+except OSError:
+    # If the model is not found, download it
+    st.info("Downloading SpaCy model 'en_core_web_sm'...")
+    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
+    nlp = spacy.load("en_core_web_sm")
 
 # Move the import inside a function
 def load_pipeline():
