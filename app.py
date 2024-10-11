@@ -18,7 +18,7 @@ import pyttsx3
 import threading
 from transformers import pipeline
 import base64
-import tensorflow as tf
+
 
 
 # ---------------------------
@@ -32,8 +32,14 @@ except:
     st.error("SpaCy model 'en_core_web_sm' not found. Please run 'python -m spacy download en_core_web_sm' in your terminal.")
     st.stop()
 
-# Initialize sentiment and emotion analysis pipeline
-sentiment_pipeline = pipeline("sentiment-analysis", framework="tf")
+# Move the import inside a function
+def load_pipeline():
+    from transformers import pipeline
+    return pipeline("sentiment-analysis", framework="pt")  # or use "tf" if using TensorFlow
+
+sentiment_pipeline = load_pipeline()
+  # Use PyTorch
+
 
 emotion_pipeline = pipeline("text-classification", model="j-hartmann/emotion-english-distilroberta-base", return_all_scores=True)
 
