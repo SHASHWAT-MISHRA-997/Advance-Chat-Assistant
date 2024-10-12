@@ -41,7 +41,7 @@ recognizer = sr.Recognizer()
 #engine = pyttsx3.init() 
 
 # Optionally set a voice
-voices = engine.getProperty('voices')
+
 engine.setProperty('voice', voices[0].id)  # Change index for different voices
 
 # Function to get response from Llama chatbot
