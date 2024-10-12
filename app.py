@@ -39,7 +39,7 @@ emotion_pipeline = pipeline("text-classification", model="j-hartmann/emotion-eng
 
 # Initialize speech recognition and text-to-speech
 recognizer = sr.Recognizer()
-engine = pyttsx3.init()
+engine = pyttsx3.init(driverName='sapi5') 
 
 # Optionally set a voice
 voices = engine.getProperty('voices')
