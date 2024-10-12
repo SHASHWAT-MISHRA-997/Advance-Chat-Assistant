@@ -1,3 +1,5 @@
+mpg321
+
 build-essential
 libopenblas-dev
 liblapack-dev
