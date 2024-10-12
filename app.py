@@ -42,7 +42,7 @@ recognizer = sr.Recognizer()
 
 # Optionally set a voice
 
-engine.setProperty('voice', voices[0].id)  # Change index for different voices
+
 
 # Function to get response from Llama chatbot
 def llama_chatbot(message, context=""):
