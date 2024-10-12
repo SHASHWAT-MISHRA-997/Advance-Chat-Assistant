@@ -1,27 +1,21 @@
-streamlit==1.37.0
-spacy==3.5.1
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0.tar.gz
+streamlit==1.37.1
 beautifulsoup4==4.12.3
 deep-translator==1.11.4
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0-py3-none-any.whl
 gTTS==2.5.3
+httpx>=0.27.0,<0.28.0  # Adjusted version for ollama compatibility
+huggingface-hub==0.24.5
 moviepy==1.0.3
-ollama==0.3.3
+numpy==1.26.4
+ollama==0.3.3  # Ensure this version is specified
 pandas==2.2.2
 PyPDF2==3.0.1
 python-docx==1.1.2
 python-pptx==1.0.2
 pyttsx3==2.91
 requests==2.31.0
-thinc==8.1.8
-numpy==1.23.5
-blis==0.7.9
-transformers==4.21.0
-huggingface-hub==0.8.0
-httpx==0.23.0
-tokenizers==0.13.3
+spacy==3.5.1
 SpeechRecognition==3.10.4
-tensorflow==2.12.0
-torch==2.0.1
-cython==0.29.36
-pip==24.2
-
+thinc==8.1.8
+torch==2.4.1
+transformers==4.44.2
