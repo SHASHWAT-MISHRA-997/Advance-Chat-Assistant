@@ -19,3 +19,4 @@ SpeechRecognition==3.10.4
 thinc==8.1.8
 torch==2.4.1
 transformers==4.44.2
+PyTorch
