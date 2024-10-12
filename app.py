@@ -231,10 +231,14 @@ def analyze_emotions(text):
 def speak_text(text):
     def speak():
         try:
-            engine.say(text)
-            if not engine._inLoop:
-                engine.runAndWait()
-        except RuntimeError as e:
+            # Generate speech using gTTS
+            tts = gTTS(text)
+            # Create a temporary mp3 file to store the speech
+            with tempfile.NamedTemporaryFile(delete=False, suffix=".mp3") as tmp_file:
+                tts.save(tmp_file.name)
+                # Use 'mpg321' to play the audio file in the background (for Linux environments)
+                os.system(f"mpg321 {tmp_file.name}")
+        except Exception as e:
             print(f"Error: {e}")
     
     # Run the speak function in a separate thread to avoid blocking
