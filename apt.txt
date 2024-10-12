@@ -2,3 +2,5 @@ build-essential
 libopenblas-dev
 liblapack-dev
 gfortran
+espeak
+mbrola
