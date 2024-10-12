@@ -44,11 +44,12 @@ recognizer = sr.Recognizer()
 
 
 
-# Function to get response from Llama chatbot
+model = pipeline("text-generation", model="gpt2")
+
 def llama_chatbot(message, context=""):
     prompt = f"{context}\nUser: {message}\nBot:"
-    response = ollama.generate(model='llama3.2:3b', prompt=prompt)
-    return response["response"]
+    response = model(prompt, max_length=50, num_return_sequences=1)
+    return response[0]["generated_text"]
 
 # Function to extract text from uploaded PDFs
 def extract_pdf_text(uploaded_files):
