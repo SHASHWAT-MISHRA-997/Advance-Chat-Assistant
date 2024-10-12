@@ -33,7 +33,7 @@ except:
     st.stop()
 
 # Initialize sentiment and emotion analysis pipeline
-sentiment_pipeline = pipeline("sentiment-analysis", framework="tf")
+sentiment_pipeline = pipeline("sentiment-analysis", model="distilbert-base-uncased-finetuned-sst-2-english")
 
 emotion_pipeline = pipeline("text-classification", model="j-hartmann/emotion-english-distilroberta-base", return_all_scores=True)
 
