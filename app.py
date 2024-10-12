@@ -18,7 +18,7 @@ import pyttsx3
 import threading
 from transformers import pipeline
 import base64
-import tensorflow as tf
+
 
 
 # ---------------------------
