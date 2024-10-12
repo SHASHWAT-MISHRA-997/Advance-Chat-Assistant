@@ -227,7 +227,6 @@ def analyze_emotions(text):
         st.error(f"Error analyzing emotions: {e}")
 
 
-# Function to speak text using pyttsx3 in a separate thread
 def speak_text(text):
     def speak():
         try:
