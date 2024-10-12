@@ -14,7 +14,6 @@ import datetime
 import speech_recognition as sr
 import spacy
 from gtts import gTTS
-import pyttsx3
 import threading
 from transformers import pipeline
 import base64
@@ -39,7 +38,7 @@ emotion_pipeline = pipeline("text-classification", model="j-hartmann/emotion-eng
 
 # Initialize speech recognition and text-to-speech
 recognizer = sr.Recognizer()
-engine = pyttsx3.init(driverName='sapi5') 
+engine = pyttsx3.init() 
 
 # Optionally set a voice
 voices = engine.getProperty('voices')
