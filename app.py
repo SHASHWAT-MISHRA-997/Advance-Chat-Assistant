@@ -17,7 +17,7 @@ from gtts import gTTS
 import threading
 from transformers import pipeline
 import base64
-
+import subprocess
 
 
 # ---------------------------
@@ -44,6 +44,16 @@ recognizer = sr.Recognizer()
 
 
 
+
+# Pull the model using the ollama CLI if it's not already present
+def pull_llama_model():
+    try:
+        subprocess.run(["ollama", "pull", "llama3.2:3b"], check=True)
+    except subprocess.CalledProcessError as e:
+        st.error(f"Failed to pull llama model: {e}")
+
+# Call the function before using the model
+pull_llama_model()
 
 def llama_chatbot(user_input, context=""):
     prompt = f"{context}\nUser: {user_input}\nBot:"
