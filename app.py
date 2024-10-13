@@ -48,7 +48,7 @@ recognizer = sr.Recognizer()
 def llama_chatbot(user_input, context=""):
     prompt = f"{context}\nUser: {user_input}\nBot:"
     # Generate the response using the local Ollama model
-    response = ollama.generate(model='llama2', prompt=prompt)
+    response = ollama.generate(model='llama3.2:3b', prompt=prompt)
     return response["response"]
 
 # Function to extract text from uploaded PDFs
