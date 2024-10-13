@@ -17,7 +17,7 @@ from gtts import gTTS
 import threading
 from transformers import pipeline
 import base64
-import subprocess
+
 
 
 # ---------------------------
@@ -39,27 +39,6 @@ emotion_pipeline = pipeline("text-classification", model="j-hartmann/emotion-eng
 # Initialize speech recognition and text-to-speech
 recognizer = sr.Recognizer()
 #engine = pyttsx3.init() 
-
-# Optionally set a voice
-
-
-
-
-
-
-def pull_llama_model():
-    try:
-        subprocess.run(["ollama", "pull", "llama3.2:3b"], check=True)
-    except Exception as e:
-        st.error("Ollama CLI is not available on this platform.")
-
-# Use Ollama only in local deployments
-if not st.secrets.get("cloud", False):  # Assuming you set "cloud: True" in Streamlit secrets for cloud deployments
-    pull_llama_model()
-
-
-# Call the function before using the model
-pull_llama_model()
 
 def llama_chatbot(user_input, context=""):
     prompt = f"{context}\nUser: {user_input}\nBot:"
