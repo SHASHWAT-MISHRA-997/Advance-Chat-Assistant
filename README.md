@@ -37,7 +37,8 @@ Additional dependencies in the requirements.txt file
 
 Clone the Repository:
 
-git clone https://github.com/YOUR-USERNAME/SHASHWAT-MISHRA-997.git
+git clone https://github.com/
+SM-AI -Enthusiast/SHASHWAT-MISHRA-997.git
 cd SHASHWAT-MISHRA-997
 
 Install Required Packages: Install all the necessary dependencies using pip:
