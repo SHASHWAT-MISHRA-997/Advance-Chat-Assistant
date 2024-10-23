@@ -2,7 +2,7 @@
 
 . Empowering Document Analysis, Translation, and Multimedia Insights
 
-# 🌟 Features: 
+# 🌟 Features : 
 
 💬 AI-Powered Chatbot: Interact with an advanced AI assistant to get answers on various topics.
 
@@ -23,7 +23,7 @@
 🧠 Sentiment & Emotion Analysis: Evaluate the sentiment and emotions from text or transcribed audio.
 
 
-# 🚀 Getting Started
+# 🚀 Getting Started : 
 
 Prerequisites
 Make sure you have the following installed:
@@ -33,7 +33,7 @@ Streamlit
 Ollama AI (for LLaMA chatbot)
 Additional dependencies in the requirements.txt file
 
-# Installation
+# Installation : 
 
 Clone the Repository:
 
@@ -47,11 +47,12 @@ pip install -r requirements.txt
 Run the Application: Launch the Streamlit app:
 
 streamlit run app.py
+
 Access the Application: The app will run on http://localhost:8501. Open it in your browser.
 
 # 💡 Usage : 
 
-💬 Chat with the AI-BOT
+💬 Chat with the AI-BOT:
 
 Text Input: Type your question or command in the provided text box (e.g., "What is the capital of Japan?" or "Explain quantum physics").
 The AI will process your query and generate a detailed, accurate response in real-time.
@@ -59,7 +60,7 @@ Voice Input: Click the "Speak" button, and the AI will listen to your voice comm
 The app uses Google Speech Recognition to understand your voice input and respond accordingly.
 Example: Say, "What's the weather like in Paris today?" and the bot will reply with up-to-date information.
 
-📄 Chat with Documents
+📄 Chat with Documents:
 
 Upload Files: Click the "Browse files" button to upload your document. Supported formats include:
 
@@ -75,7 +76,7 @@ Multiple File Support: You can upload multiple files, and the app will combine a
 
 Example: Upload a research paper in PDF format and a supporting Excel file, then ask, "What are the key findings from the data?"
 
-🌐 Chat with Websites
+🌐 Chat with Websites:
 
 URL Input: Enter the URL of a website you want to analyze (e.g., a news article or blog post).
 
@@ -85,7 +86,7 @@ Ask Questions: Once the website content is fetched, you can ask questions about 
 Example: Enter a URL for a Wikipedia page and ask, "What are the key points in this article?"
 Content Analysis: The app can summarize large articles, analyze themes, and even provide sentiment analysis of the content.
 
-🎧 Chat with Media (Audio/Video)
+🎧 Chat with Media (Audio/Video):
 
 Upload Video: Click "Upload Video" and select an MP4, AVI, or MOV file. The app will extract the audio from the video.
 
@@ -100,7 +101,7 @@ Sentiment & Emotion Analysis: After the transcription, you can ask the AI to ana
 
 Example: Upload a motivational speech and ask, "What is the emotional tone of this speech?"
 
-🎙️ Podcast from PDF
+🎙️ Podcast from PDF:
 
 Upload PDF: Click "Upload PDF Document" to upload a PDF file.
 
@@ -112,7 +113,7 @@ Listen: Once the podcast is generated, you can listen to it directly within the 
 
 Example: Upload a PDF research paper and convert it into a podcast for easy consumption while driving or exercising.
 
-🌍 AI Translator
+🌍 AI Translator:
 
 Text Input: Type or paste the text you want to translate into the text box.
 
@@ -124,7 +125,7 @@ Translate: Click "Translate", and the app will display the translated text.
 
 Example: Translate an English article into Hindi for wider distribution.
 
-📊 Text to SQL
+📊 Text to SQL:
 
 Natural Language Query: Type a question in plain English (e.g., "Show all employees where salary is greater than 50,000").
 
@@ -136,7 +137,7 @@ Copy code
 SELECT * FROM customers WHERE order_date > NOW() - INTERVAL 30 DAY;
 Database Integration (optional): Use the generated SQL to query your database and retrieve results.
 
-🧑‍🏫 Research Assistant
+🧑‍🏫 Research Assistant:
 
 Upload Research Documents: Upload PDFs or Word documents containing research material.
 
@@ -146,7 +147,7 @@ Ask Research-Specific Questions: Ask the AI questions directly related to the re
 Example: Upload a PDF research paper on machine learning and ask, "What methodology was used in this study?"
 Get Summaries and Insights: The AI can provide concise summaries or detailed answers about specific sections of your research.
 
-🧠 Sentiment & Emotion Analysis
+🧠 Sentiment & Emotion Analysis:
 
 Text Input or Audio Upload: Enter text or upload an audio file (WAV) to analyze.
 
@@ -158,7 +159,7 @@ Emotion Analysis: The app can detect emotions like joy, sadness, anger, surprise
 Example: Upload a customer testimonial and ask, "What emotions are present in this text?"
 
 
-# 🌍 Languages Supported:
+# 🌍 Languages Supported :
 
 . English
 
@@ -175,6 +176,31 @@ Example: Upload a customer testimonial and ask, "What emotions are present in th
 . Tamil
 
 . Telugu
+
+# 🛠️ Technologies Used : 
+Streamlit - Interactive web applications
+
+Ollama - AI-powered language model integration
+
+PyPDF2, docx, pptx, pandas - Document handling
+
+MoviePy, SpeechRecognition, gTTS - Audio processing
+
+BeautifulSoup, requests - Web scraping
+
+SpaCy, Transformers - NLP and sentiment analysis
+
+# 🤝 Contributing :
+
+We welcome contributions! If you want to help improve this project, feel free to submit a pull request or open an issue.
+
+# 📄 License :
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+# ✨ Credits :
+
+Created by Shashwat Mishra
 
 
 
