@@ -1,17 +1,27 @@
 # SM IntelliBot: AI-Driven Business & Research Companion
+
 . Empowering Document Analysis, Translation, and Multimedia Insights
 
 # 🌟 Features: 
+
 💬 AI-Powered Chatbot: Interact with an advanced AI assistant to get answers on various topics.
+
 📄 Document Analysis: Upload and analyze content from PDFs, Word, PPTX, and Excel files.
+
 🌐 Web Content Analyzer: Extract and interact with website content by providing the URL.
+
 🎧 Video-to-Audio Extraction: Extract and transcribe audio from video files.
+
 🎙️ Podcast Generator: Turn PDF content into an audio podcast for easy listening.
+
 🌍 Multilingual Translation: Translate text and documents into multiple languages.
+
 📊 Text-to-SQL Conversion: Convert natural language queries into SQL statements.
+
 🧑‍🏫 Research Assistant: Analyze research documents and get insights.
+
 🧠 Sentiment & Emotion Analysis: Evaluate the sentiment and emotions from text or transcribed audio.
-📷 Screenshots
+
 
 # 🚀 Getting Started
 Prerequisites
