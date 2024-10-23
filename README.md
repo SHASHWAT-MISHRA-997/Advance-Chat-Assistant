@@ -1,12 +1,12 @@
 # SM IntelliBot: AI-Driven Business & Research Companion
 
-. Empowering Document Analysis, Translation, and Multimedia Insights
+. Empowering Document Analysis, Translation and Multimedia Insights
 
 # 🌟 Features : 
 
 💬 AI-Powered Chatbot: Interact with an advanced AI assistant to get answers on various topics.
 
-📄 Document Analysis: Upload and analyze content from PDFs, Word, PPTX, and Excel files.
+📄 Document Analysis: Upload and analyze content from PDFs, Word, PPTX and Excel files.
 
 🌐 Web Content Analyzer: Extract and interact with website content by providing the URL.
 
@@ -55,7 +55,8 @@ Access the Application: The app will run on http://localhost:8501. Open it in yo
 
 Text Input: Type your question or command in the provided text box (e.g., "What is the capital of Japan?" or "Explain quantum physics").
 The AI will process your query and generate a detailed, accurate response in real-time.
-Voice Input: Click the "Speak" button, and the AI will listen to your voice command.
+
+Voice Input: Click the "Speak" button and the AI will listen to your voice command.
 The app uses Google Speech Recognition to understand your voice input and respond accordingly.
 Example: Say, "What's the weather like in Paris today?" and the bot will reply with up-to-date information.
 
@@ -83,7 +84,7 @@ The app will fetch and display the text from the website, removing irrelevant el
 Ask Questions: Once the website content is fetched, you can ask questions about the site’s content.
 
 Example: Enter a URL for a Wikipedia page and ask, "What are the key points in this article?"
-Content Analysis: The app can summarize large articles, analyze themes, and even provide sentiment analysis of the content.
+Content Analysis: The app can summarize large articles, analyze themes and even provide sentiment analysis of the content.
 
 🎧 Chat with Media (Audio/Video):
 
@@ -93,7 +94,7 @@ After the extraction, the app displays the audio transcript.
 Ask About Audio: Once the audio is transcribed, you can ask the AI to analyze the content.
 
 Example: Upload a lecture video and ask, "What are the main points of the discussion?"
-Upload Audio: You can also upload audio files (WAV format), and the app will transcribe and analyze the content.
+Upload Audio: You can also upload audio files (WAV format) and the app will transcribe and analyze the content.
 
 Example: Upload a podcast and ask, "What was the speaker's opinion on climate change?"
 Sentiment & Emotion Analysis: After the transcription, you can ask the AI to analyze the sentiment and emotional tone of the speech.
@@ -116,7 +117,7 @@ Example: Upload a PDF research paper and convert it into a podcast for easy cons
 
 Text Input: Type or paste the text you want to translate into the text box.
 
-You can also upload a PDF document, and the app will extract and translate the text.
+You can also upload a PDF document and the app will extract and translate the text.
 Language Selection: Choose your target language from the drop-down menu.
 
 Supported languages include English, Hindi, Spanish, French, German, Bengali, Tamil, Telugu, and more.
@@ -128,7 +129,7 @@ Example: Translate an English article into Hindi for wider distribution.
 
 Natural Language Query: Type a question in plain English (e.g., "Show all employees where salary is greater than 50,000").
 
-Convert to SQL: Click the "Convert to SQL" button, and the app will generate an SQL statement based on your query.
+Convert to SQL: Click the "Convert to SQL" button and the app will generate an SQL statement based on your query.
 
 Example: Type "Get all customers who placed orders in the last 30 days" and receive an SQL statement like:
 sql
