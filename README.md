@@ -196,7 +196,7 @@ We welcome contributions! If you want to help improve this project, feel free to
 
 # 📄 License :
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the Apache-2.0 license. See the LICENSE file for more details.
 
 # ✨ Credits :
 
