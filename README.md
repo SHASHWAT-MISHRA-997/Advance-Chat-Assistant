@@ -37,9 +37,7 @@ Additional dependencies in the requirements.txt file
 
 Clone the Repository:
 
-git clone https://github.com/
-SM-AI -Enthusiast/SHASHWAT-MISHRA-997.git
-cd SHASHWAT-MISHRA-997
+git clone https://github.com/SHASHWAT-MISHRA-997/Advance-Chat-Assistant.git
 
 Install Required Packages: Install all the necessary dependencies using pip:
 
