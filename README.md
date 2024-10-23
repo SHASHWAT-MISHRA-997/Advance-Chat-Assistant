@@ -192,7 +192,7 @@ SpaCy, Transformers - NLP and sentiment analysis
 
 # 🤝 Contributing :
 
-We welcome contributions! If you want to help improve this project, feel free to submit a pull request or open an issue.
+I welcome contributions! If you want to help improve this project, feel free to submit a pull request or open an issue.
 
 # 📄 License :
 
