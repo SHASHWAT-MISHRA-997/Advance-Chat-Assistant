@@ -190,9 +190,10 @@ BeautifulSoup, requests - Web scraping
 
 SpaCy, Transformers - NLP and sentiment analysis
 
-# Working Video : 
+## 🎥 Working Video :
+
 <a href="https://youtu.be/A2i7E-u_wKs">
-    <img src="https://img.youtube.com/vi/A2i7E-u_wKs/0.jpg" alt="Watch the video" width="800"/>
+    <img src="https://img.youtube.com/vi/A2i7E-u_wKs/0.jpg" alt="Watch the video" style="display: block; margin: 0 auto; width: 90%; max-width: 1000px;" />
 </a>
 
 # 🤝 Contributing :
