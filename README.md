@@ -32,7 +32,6 @@ Python 3.8+
 
 Streamlit
 
-Ollama AI (for LLaMA chatbot)
 
 Additional dependencies in the requirements.txt file
 
