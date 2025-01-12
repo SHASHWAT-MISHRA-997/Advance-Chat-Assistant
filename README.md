@@ -182,7 +182,7 @@ Example: Upload a customer testimonial and ask, "What emotions are present in th
 # 🛠️ Technologies Used : 
 Streamlit - Interactive web applications
 
-Ollama - AI-powered language model integration
+Llama - AI-powered language model integration
 
 PyPDF2, docx, pptx, pandas - Document handling
 
